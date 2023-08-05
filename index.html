@@ -5,27 +5,360 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="\styles.css"> 
   </head>
   <body>
-    <h1 id="test">Hello, world!</h1>
+    <!-- First Menu -->
+    <div class="headA"><span class="mx-3">NOT A STUDENT? VISIT THE <a href="" class="text-white">EDUCATOR SITE</a></span></div>
 
-
-    <!-- Toast Setup -->
-    <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <img src="Toast.jpg" class="h-25 rounded me-2" style="width:25px" alt="Toast">
-          <strong class="me-auto">Bootstrap</strong>
-          <small>11 mins ago</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    <!-- Second Menu -->
+    <div class="headB mx-2">
+      <img src="\logo.jpg" class="ms-3"/>
+      <!-- Right Menu -->
+      <div class="d-flex flex-column align-items-end justify-content-center">
+        <!-- Top Menu -->
+        <div class="d-flex my-2 text-secondary align-items-center">
+          <div class="mx-1"><a href="" class="text-secondary">Contact</a></div>
+          <div class="mx-1"><a href="" class="text-secondary">Create Account</a></div>
+          <button type="button" class="mx-1 py-0 rounded-pill btn btn-info text-white lh-sm">Log In</button>
+        </div>
+        <!-- Bottom Menu -->
+        <div class="d-flex text-danger mb-2">
+          <strong class="mx-1"><a href="" class="text-danger">TEAS</a></strong>
+          <div class="mx-1"><a href="" class="text-danger">Nursing School Resources</a></div>
+          <div class="mx-1"><a href="" class="text-danger">NCLEX Prep</a></div>
+          <div class="mx-1"><a href="" class="text-danger">Events</a></div>
+          <div class="mx-1"><a href="" class="text-danger">About Us</a></div>
+          <div class="mx-1"><a href="" class="text-danger">Blog</a></div>
+          <div class="mx-1"><a href="" class="text-danger">Q</a></div>
         </div>
       </div>
+    </div>
 
+    <!-- Third Menu -->
+    <div class="bg-info lh-1">
+      <button type="button" class="ms-4 rounded-1 btn btn-danger lh-1 py-0 px-1 smlFont">Save 10%</button>
+      <span class="smlFont">Use coupon code <strong><u>COMPKG49</u></strong> to take advantage of this <strong>limited time offer</strong>.</span>
+    </div>
 
+    <!-- Brain Part -->
+    <div class="d-flex justify-content-between brain">
+      <div class="ms-5 d-flex flex-column justify-content-evenly">
+        <div class="medFont"><strong>ATI TEAS Comprehensive Study Package</strong></div>
+        <div><strong>Our most complete prep</br> package personalized for you</strong></div>
+        <div class="smlFont"><strong>$215</strong> <s>$264</s> with coupon <strong><u>COMPKG649</u></strong></div>
+        <button type="button" class="rounded-pill btn btn-danger py-1 smlFont w-25 button-one">Add to cart</button>
+      </div>
+      <img src="\Brain.jpg" height="200px" class="me-4"/>
+    </div>
+
+    <div class="d-flex seller">
+      <img src="\wreath.png" height="50px" width="50px"/>
+      <div class="align-self-center">See why over 100,000 people</br> have used ATI TEAS Prep.</div>
+    </div>
+    
+    <!-- What's Inside -->
+    <div class="d-flex pt-0 gap-4 mx-4" style="height:280px;">
+      <div class="d-flex flex-column justify-content-center ms-4">
+        <div><strong>What's inside the package?</strong></div>
+        <div class="smlFont mt-2">Our prep products are meant to be used together. Giving you the best prep experience that we can.</div>
+      </div>
+      <div class="d-flex flex-column justify-content-evenly">
+        <div>
+          <div><img src="\button.jpg" width="20px"/><strong>SmartPrep tutorial</strong></div>
+          <div class="smlFont">SmartPrep is the heart of your prep. Identifying your weak areas up front and guiding you through a customized study plan.</div>
+        </div>
+        <div>
+          <div><img src="\button.jpg" width="20px"/><strong>Study Guide</strong></div>
+          <div class="smlFont">Available in printed or eBook formats, our guides teach test-taking strategies, provide exam-day tips, and offer further prep for the exam.</div>
+        </div>
+      </div>
+      <div class="d-flex flex-column justify-content-evenly me-4">
+        <div>
+          <div><img src="\button.jpg" width="20px"/><strong>Practice asssessments</strong></div>
+          <div class="smlFont">Test your exam readiness and review detailed rationales with (2) simulated TEAS exams and (1) A&P exam.</div>
+        </div>
+        <div>
+          <div><img src="\button.jpg" width="20px"/><strong>Mobile app for 90 Days</strong></div>
+          <div class="smlFont">Test your knowledge on the go with 2,300 practice questions and detailed rationales for each answer.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center fs-5 my-4 mx-4"><strong>See why over <span class="text-danger">800,000</span> students have used ATI TEAS Prep</strong></div>
+
+    <!-- Card Carousel -->
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide mx-4">
+      <div class="carousel-indicators" style="bottom: -50px;">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active rounded-circle" style="width: 10px; height: 10px;" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="rounded-circle" style="width: 10px;height: 10px;" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="rounded-circle" style="width: 10px; height: 10px;" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 d-flex flex-row">
+                <img src="\Person1.jpg" style="width: 35px; height: 35px; align-self: center;" class="card-img-top rounded-circle ms-2" alt="...">
+                <div class="card-body align-self-center">
+                  <h5 class="card-text medFont">They gave me a rundown of everything I would expect on the test. It made me more prepared for when the time came to take the test.</h5>
+                  <p class="card-title"><strong>Kierra Jackson</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 d-flex flex-row">
+                <img src="\Person2.jpg" style="width: 35px; height: 35px; align-self: center;" class="card-img-top rounded-circle ms-2" alt="...">
+                <div class="card-body align-self-center">
+                  <h5 class="card-text medFont">I loved the app and how I could practice and study on the go whenever I had time. I really liked the online study materials as well. You take a test for each subject beforehand and they tell you where you are lacking so you can hone in on those areas the most.</h5>
+                  <p class="card-title"><strong>Colleen Keeven</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 d-flex flex-row">
+                <img src="\Person3.jpg" style="width: 35px; height: 35px; align-self: center;" class="card-img-top rounded-circle ms-2" alt="...">
+                <div class="card-body align-self-center">
+                  <h5 class="card-text medFont">I like that the smart prep module is designed to highlight the areas that need improvement. The app was a great study on the go!</h5>
+                  <p class="card-title"><strong>Alison Dunwoody</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 d-flex flex-row">
+                <img src="\Person2.jpg" style="width: 35px; height: 35px; align-self: center;" class="card-img-top rounded-circle ms-2" alt="...">
+                <div class="card-body align-self-center">
+                  <h5 class="card-text medFont">I loved the app and how I could practice and study on the go whenever I had time. I really liked the online study materials as well. You take a test for each subject beforehand and they tell you where you are lacking so you can hone in on those areas the most.</h5>
+                  <p class="card-title"><strong>Colleen Keeven</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 d-flex flex-row">
+                <img src="\Person3.jpg" style="width: 35px; height: 35px; align-self: center;" class="card-img-top rounded-circle ms-2" alt="...">
+                <div class="card-body align-self-center">
+                  <h5 class="card-text medFont">I like that the smart prep module is designed to highlight the areas that need improvement. The app was a great study on the go!</h5>
+                  <p class="card-title"><strong>Alison Dunwoody</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 d-flex flex-row">
+                <img src="\Person1.jpg" style="width: 35px; height: 35px; align-self: center;" class="card-img-top rounded-circle ms-2" alt="...">
+                <div class="card-body align-self-center">
+                  <h5 class="card-text medFont">They gave me a rundown of everything I would expect on the test. It made me more prepared for when the time came to take the test.</h5>
+                  <p class="card-title"><strong>Kierra Jackson</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 d-flex flex-row">
+                <img src="\Person3.jpg" style="width: 35px; height: 35px; align-self: center;" class="card-img-top rounded-circle ms-2" alt="...">
+                <div class="card-body align-self-center">
+                  <h5 class="card-text medFont">I like that the smart prep module is designed to highlight the areas that need improvement. The app was a great study on the go!</h5>
+                  <p class="card-title"><strong>Alison Dunwoody</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 d-flex flex-row">
+                <img src="\Person1.jpg" style="width: 35px; height: 35px; align-self: center;" class="card-img-top rounded-circle ms-2" alt="...">
+                <div class="card-body align-self-center">
+                  <h5 class="card-text medFont">They gave me a rundown of everything I would expect on the test. It made me more prepared for when the time came to take the test.</h5>
+                  <p class="card-title"><strong>Kierra Jackson</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 d-flex flex-row">
+                <img src="\Person2.jpg" style="width: 35px; height: 35px; align-self: center;" class="card-img-top rounded-circle ms-2" alt="...">
+                <div class="card-body align-self-center">
+                  <h5 class="card-text medFont">I loved the app and how I could practice and study on the go whenever I had time. I really liked the online study materials as well. You take a test for each subject beforehand and they tell you where you are lacking so you can hone in on those areas the most.</h5>
+                  <p class="card-title"><strong>Colleen Keeven</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev btn btn-secondary my-auto" style="width: 50px;height: 100px; margin-left: -40px;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden z-3">Previous</span>
+      </button>
+      <button class="carousel-control-next btn btn-secondary my-auto" style="width: 50px;height: 100px;margin-right: -40px;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Video Portion -->
+    <div class="d-flex mb-4 mt-5 ms-4" >
+      <div >
+        <video style="height: 300px; width: 300px;" src="\vid.mp4" class="object-fit-cover ms-4 rounded-4"></video>
+      </div>
+      <div class="d-flex flex-column justify-content-evenly my-3 mx-4">
+        <div class="text-info">SmartPrep</div>
+        <div class="fs-3"><strong>Imagine how much time you will save with customized prep</strong></div>
+        <div><strong>Focus on the areas you need the most help with thanks to our SmartPrep technology.</strong></div>
+        <div class="smlFont">With our initial practice tests and robust test taker data, we can assess your proficiency in different topic areas and adjust the lessons and materials just for you.</div>
+      </div>
+    </div>
+
+    <!-- Practice tests -->
+    <div class="d-flex flex-row my-4 ms-4">
+      <div class="d-flex flex-column justify-content-center mx-4">
+        <div class="text-info medFont">Practice Tests</div>
+        <div class="my-2"><strong>Boost your confidence with 2 Online Practice Tests</strong></div>
+        <div class="smlFont">Our online practice assessments are patterned after the actual exam and give you a feel for the test before exam day. Get a feel for the time, types of questions, and format - boosting your confidence on exam day.</div>
+      </div>
+      <img src="\Teas1.jpg" style="width:50vw" class="rounded-2 shadow me-4"/>
+    </div>
+
+    <!-- Practice questions -->
+    <div class="d-flex flex-row my-4 ms-4">
+      <img src="\Teas2.jpg" style="width:50vw" class="ms-4 rounded-2 shadow"/>
+      <div class="d-flex flex-column justify-content-center mx-4">
+        <div class="text-info medFont">3,570 Practice Questions</div>
+        <div class="my-1"><strong>Go beyond memorization & gain a deep understanding</strong></div>
+        <div class="smlFont">Practice questions can be found in the mobile app, through our practice tests, and at the end of lessons within the SmartPrep Tutorial. Each question provides <strong>In-depth rationale</strong> to help you digest key information. <strong>Giving you a leg up on the exam.</strong></div>
+      </div>
+    </div>
+
+    <!-- Your Score Matters -->
+    <div class="d-flex flex-row my-2 mx-4">
+      <div class="d-flex flex-column justify-content-center ms-4">
+        <div class="text-info medFont">Your score matters</div>
+        <div class="my-1"><strong>Invest in your future career and get a leg up on your peers.</strong></div>
+        <div class="smlFont my-1"><strong>Your TEAS score is more than just a score</strong></div>
+        <div class="smlFont">Did you know that 40% of test takers retake the exam. Your prep is crucial to succeeding on the exam and can provide a great foundation for healthcare education success. Learn important terms, the basics of Anatomy & Physiology, healthcare math and get a leg up in your healthcare career.</div>
+      </div>
+      <img src="\Teas3.jpg" style="width:50vw" class="rounded-2 shadow ms-4"/>
+    </div>
+
+    <div class="text-center fs-5 my-4 mx-4"><strong>Reduce your anxiety knowing that you are preparing with TEAS experts.</strong></div>
+
+    <!-- 6x6 Cards -->
+    <div class="d-flex flex-row mb-4 ms-4">
+      <div class="d-flex flex-column ms-3" style="width: 30vw;">
+        <div class="card h-100 d-flex flex-row mb-4 brain">
+          <img src="\Person1.jpg" style="width: 35px; height: 35px;" class="mt-4 card-img-top rounded-circle ms-2" alt="...">
+          <div class="card-body align-self-center">
+            <h5 class="card-text medFont">I loved the app and how I could practice and study on the go whenever I had time. I really liked the online study materials as well. You take a test for each subject beforehand and they tell you where you are lacking so you can hone in on those areas the most.</h5>
+            <p class="card-title"><strong>Stephanie Tillotson</strong></p>
+          </div>
+        </div>
+        <div class="card h-100 d-flex flex-row brain">
+          <img src="\Person3.jpg" style="width: 35px; height: 35px; " class=" mt-4 card-img-top rounded-circle ms-2" alt="...">
+          <div class="card-body align-self-center">
+            <h5 class="card-text medFont">Pay for the ATI prep materials. I feel as though it helped me score higher after my first try.</h5>
+            <p class="card-title"><strong>Shanon Biggs</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column ms-3" style="width: 30vw;">
+        <div class="card h-100 d-flex flex-row mb-4 brain">
+          <img src="\Person3.jpg" style="width: 35px; height: 35px;" class=" mt-4 card-img-top rounded-circle ms-2" alt="...">
+          <div class="card-body align-self-center">
+            <h5 class="card-text medFont">Do not stress, honestly take your time, I gave myself a month ahead of time to start studying and it helped so much, I honestly fels so prepared, which my grade showed that!</h5>
+            <p class="card-title"><strong>Emilee Smith</strong></p>
+          </div>
+        </div>
+        <div class="card h-100 d-flex flex-row brain">
+          <img src="\Person2.jpg" style="width: 35px; height: 35px;" class="mt-4 card-img-top rounded-circle ms-2" alt="...">
+          <div class="card-body align-self-center">
+            <h5 class="card-text medFont">They gave me a rundown of everything I would expect on the test. It made me more prepared for when the time came to take the test.</h5>
+            <p class="card-title"><strong>Kierra Jackson</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column mx-3" style="width: 30vw;">
+        <div class="card h-100 d-flex flex-row mb-4 brain">
+          <img src="\Person2.jpg" style="width: 35px; height: 35px;" class="mt-4 card-img-top rounded-circle ms-2" alt="...">
+          <div class="card-body align-self-center">
+            <h5 class="card-text medFont">Pay for the ATI prep materials. I feel as though it helped me score higher after my first try.</h5>
+            <p class="card-title"><strong>Shanon Biggs</strong></p>
+          </div>
+        </div>
+        <div class="card h-100 d-flex flex-row brain">
+          <img src="\Person1.jpg" style="width: 35px; height: 35px;" class="mt-4 card-img-top rounded-circle ms-2" alt="...">
+          <div class="card-body align-self-center">
+            <h5 class="card-text medFont">I would advise someone preparing for the exam to invest in the prep products, because they prepare you for success on the ati teas exam!</h5>
+            <p class="card-title"><strong>Yareli Beltran</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Special Offer -->
+    <div class="d-flex flex-row justify-content-evenly brain">
+      <img src="\Teas4.jpg" class="my-4 mx-5 shadow rounded-3" style="width: 200px; height: 200px;"/>
+      <div>
+        <div class="text-danger m-4"><strong>Special Offer</strong></div>
+        <div><strong>Get 10% off the ATI TEAS Comprehensive Package</strong></div>
+        <div class="d-flex m-4">
+          <div class="me-2">
+            <div><strong>$215 <s>$264</s></strong></div>
+            <div class="smlFont">with coupon <strong><u>COMPKG49</u></strong></div>
+          </div>
+          <button class="rounded-pill btn btn-danger button-one">Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #E54D42;">
+      <div  class="d-flex justify-content-between">
+        <div class="text-white smlFont d-flex flex-column ms-4">
+          <div class="mt-3"><a href="" class="text-white">Nursing School Resources</a></div>
+          <div class="mt-3"><a href="" class="text-white">Privacy</a></div>
+          <div class="mt-3"><a href="" class="text-white">Your Privacy Choices</a></div>
+          <div class="mt-3"><a href="" class="text-white">California Residents Privacy Notice</a></div>
+          <div class="mt-3"><a href="" class="text-white">Data Privacy Reques</a>t</div>
+          <div class="mt-3"><a href="" class="text-white">Terms and Conditions</a></div>
+          <div class="my-3"><a href="" class="text-white">Technical Requirements</a></div>
+        </div>
+        <img src="\logo2.jpg" style="height: 50px;" class="align-self-end mb-3"/>
+      </div>
+      <div class="d-flex ">
+        <div class="w-100 mx-4 text-center" style="border: 1px solid white;"></div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="smlFont my-3 text-white ms-4">Copyright @ 2023 Assessment Technologies Institute @, LLC. All rights reserved.</div>
+        <div class="d-flex my-3 smlFont">
+          <div><a href=""><i class="fa-brands fa-facebook-f me-2" style="color: #ffffff;"></i></a></div>
+          <div><a href=""><i class="fa-brands fa-twitter me-2" style="color: #ffffff;"></i></a></div>
+          <div><a href=""><i class="fa-brands fa-linkedin-in me-2" style="color: #ffffff;"></i></a></div>
+          <div><a href=""><i class="fa-brands fa-youtube me-2" style="color: #ffffff;"></i></a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Setup -->
+    <div class="toast fade show rounded fixed-bottom" style="width: 200px;" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header" style="width:200px">
+          <img src="\Toast.jpg" class="rounded me-2" style="width:70px;" alt="Toast">
+          <div class="mx-2" style="width:auto">
+            <strong class="">Download our FREE 6-Week Study Plan</strong>
+            <button type="button" class="btn btn-danger rounded-pill">Download</button>
+          </div>
+          <div class="position-relative toastclose toastcloseB">
+            <svg style="width: 100px;height: 100px;"><circle fill="lightblue" cx="19" cy="50" r="18"/></svg>
+            <button type="button" class="btn-close  position-relative toastclose toastcloseA" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
 
     <!--Script Setup-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>    <script src="skill.js"></script> 
-
+    <script src="https://kit.fontawesome.com/0212fd1d20.js" crossorigin="anonymous"></script>
   </body>
 </html>

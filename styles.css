@@ -1,7 +1,57 @@
+.brain{
+    background-color: #F8F4F1;
+}
+
+.button-one{
+    min-width: 90px;
+}
+
+.headA{
+    font-size: 8px;
+    width: 100%;
+    text-align: right;
+    color:white;
+    background: linear-gradient(90deg,rgba(229,81,67,1) 0%, rgba(234,143,98,1) 80%, rgba(228,129,74,1) 100%);
+}
+
+a{ text-decoration: none;}
+
+.headB{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.smlFont{font-size: 10px;}
+
+.medFont{font-size: 15px;}
+
+.seller{
+    backdrop-filter: blur(20px);
+    width: 190px;
+    position: absolute;
+    top: 250px;
+    right: 10px;
+    font-size: 10px;
+}
+
 h1{
     color:red;
 }
 
 .toast{
     autohide:false;
+}
+
+.toastclose{
+    top:-60px;
+}
+
+.toastcloseA{
+    left:-3px;
+}
+
+.toastcloseB{
+    left: -25px;
 }

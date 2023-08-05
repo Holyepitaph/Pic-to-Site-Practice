@@ -36,6 +36,11 @@ a{ text-decoration: none;}
     font-size: 10px;
 }
 
+.stretch{
+    align-self: stretch;
+    justify-self: stretch;
+}
+
 h1{
     color:red;
 }

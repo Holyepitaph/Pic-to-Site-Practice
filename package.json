@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "webpack": "^5.88.2"
+  },
+  "name": "pic-to-site-practice",
+  "version": "1.0.0",
+  "main": "skill.js",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,106 @@
+
+
+.brain{
+    background-color: #F8F4F1;
+}
+
+.button-one{
+    min-width: 90px;
+}
+
+.headA{
+    font-size: 8px;
+    width: 100%;
+    text-align: right;
+    color:white;
+    background: linear-gradient(90deg,rgba(229,81,67,1) 0%, rgba(234,143,98,1) 80%, rgba(228,129,74,1) 100%);
+}
+
+a{ text-decoration: none;}
+
+.headB{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.footer-logo{height: 50px;}
+
+.smlFont{font-size: 10px;}
+
+.medFont{font-size: 15px;}
+
+.lgFont{font-size: 20px;}
+.seller{
+    backdrop-filter: blur(20px);
+    width: 190px;
+    position: absolute;
+    top: 250px;
+    right: 10px;
+    font-size: 10px;
+}
+
+.stretch{
+    align-items: center;
+    justify-items: center;
+}
+
+h1{
+    color:red;
+}
+
+.toast{
+    autohide:false;
+}
+
+.toastclose{
+    top:-60px;
+}
+
+.toastcloseA{
+    left:-3px;
+}
+
+.toastcloseB{
+    left: -25px;
+}
+
+.vid{width:80% ;height: 250px;}
+.vidContainer{flex-direction: column;}
+
+@media screen and (min-width: 768px) {
+    .fontA{font-size: 10px;}
+    .fontB{font-size: 15px;}
+    .fontC{font-size: 20px;}
+    .fontD{font-size: 25px;}
+    .fontE{font-size: 30px;}
+    .fontF{font-size: 35px;}
+    .fontG{font-size: 40px;}
+    .fontH{font-size: 45px;}
+    .fontI{font-size: 50px;}
+    .brain-pic{height: 250px;}
+    .button-head{margin-top: -7px;}
+    .headB{height: 50px;}
+    .seller{top:350px;width: 300px;}
+    .footer-logo{height:50px;}
+    .vidContainer{flex-direction: row;}
+  }
+
+  @media screen and (min-width: 1200px) {
+    .fontA{font-size: 15px;}
+    .fontB{font-size: 20px;}
+    .fontC{font-size: 25px;}
+    .fontD{font-size: 30px;}
+    .fontE{font-size: 35px;}
+    .fontF{font-size: 40px;}
+    .fontG{font-size: 45px;}
+    .fontH{font-size: 50px;}
+    .fontI{font-size: 100px;}
+    .brain-pic{height: 350px;}
+    .button-head{margin-top: -5px;}
+    .headB{height: 100px;}
+    .seller{top:325px;width: 400px;}
+    .footer-logo{height:100px;}
+    .vidContainer{flex-direction: row;}
+  }
